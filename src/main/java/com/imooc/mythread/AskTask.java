@@ -27,7 +27,7 @@ public class AskTask implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        synchronized (AskTask.class) {
+        synchronized (AskTask.class) {
             if (result != null) {
                 /* 模拟报价站点名称 */
                 String[] sites = {"苏宁", "天猫", "京东"};
@@ -36,7 +36,7 @@ public class AskTask implements Runnable {
                 // 添加到共享变量list中
                 results.add(result);
             }
-//        }
+        }
         try {
             System.out.println("询价结束，等待其它线程..." + result);
             // 抵达屏障
