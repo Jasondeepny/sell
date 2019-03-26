@@ -87,7 +87,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @author 张海波
+     * @author
      */
     public static int buildIntRandom(final int length) {
         String maxStr = StringUtils.rightPad("1", length + 1, '0');
