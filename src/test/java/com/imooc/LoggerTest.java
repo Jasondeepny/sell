@@ -53,16 +53,16 @@ public class LoggerTest {
 //        System.out.println(RandomUtil.buildIntRandom(15));
 //       // System.out.println(Long.parseLong("1234567890111111"));
 
-        DateFormat DATE_FORMAT = new SimpleDateFormat("yyyyMMddHHmmssS");
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssS");
+//        DateFormat DATE_FORMAT = new SimpleDateFormat("yyyyMMddHHmmssS");
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssS");
         //LocalDateTime date = LocalDateTime.parse("20170617122312", formatter);
         //System.out.println(formatter.format(date));
 //        System.out.println(StringUtils.rightPad(DATE_FORMAT.format(new Date()), 17, "0"));
 //        System.out.println("------------------------------");
 //        System.out.println(StringUtils.rightPad(LocalDateTime.now().format(formatter), 17, "0"));
-          System.out.println(new Date().getTime());
-
-
+          //System.out.println(new Date().getTime());
+        long l = 1000 * 10L;
+        System.out.println(l);
 
     }
 
