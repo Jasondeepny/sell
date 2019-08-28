@@ -1,8 +1,6 @@
 package com.imooc.dataobject;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
 import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.Entity;
@@ -15,8 +13,6 @@ import java.math.BigDecimal;
  */
 @Entity
 @Data
-@Accessors(chain = true)
-@EqualsAndHashCode(callSuper = false)
 public class OrderDetail {
 
     @Id
