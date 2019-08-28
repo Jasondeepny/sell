@@ -5,6 +5,7 @@ import com.imooc.repository.ProductCategoryRepository;
 import com.imooc.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -35,6 +36,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    @Transactional
     public ProductCategory save(ProductCategory productCategory) {
         return repository.save(productCategory);
     }
